@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic checkbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<center>Dynamic checkbox
+	<br><br>
+Are you a student ?
+<input onclick="student();" type="radio" name="se">Yes
+<input onclick="employee();" type="radio" name="se">No
+
+<br>
+<br>
+	<input type="text" name="employee" class="employee" placeholder="employee">
+
+	<input type="text" name="student" class="student" placeholder="student">
+<br>
+<br>
+</center>
+
+<script type="text/javascript">
+	function student(){
+		document.querySelector('.employee').style.display='none'
+		document.querySelector('.student').style.display='block'
+	}
+
+	function employee(){
+		document.querySelector('.student').style.display='none'
+		document.querySelector('.employee').style.display='block'
+
+	}
+</script>
+
+</body>
+</html>
